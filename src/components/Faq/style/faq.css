@@ -1,0 +1,32 @@
+.faq {
+  background-color: #fafffc;
+}
+
+.faq h1 {
+  color: var(--main-color);
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.faq .box {
+  padding: 3rem;
+}
+
+.faq .box svg {
+  font-size: 2rem;
+}
+
+.faq .box .head {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.faq .para {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=faq.css.map */

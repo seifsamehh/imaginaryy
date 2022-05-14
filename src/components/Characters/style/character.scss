@@ -1,0 +1,27 @@
+.characters {
+    overflow: hidden;
+    .upper-part,
+    .footer-part {
+        background-color: var(--text-color);
+        padding: 1rem;
+        span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            animation: move-x 10s ease-in-out infinite;
+            @keyframes move-x {
+                0% {
+                    transform: translateX(700%);
+                }
+                50% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-700%);
+                }
+            }
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+}

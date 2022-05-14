@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+/* start global components */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h2,
+video,
+img {
+  user-select: none;
+}
+::selection {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(192, 192, 192);
+  border-radius: 10px;
+}
+/* end global components */
+/* start global variables */
+:root {
+  --main-color: #8459ff;
+  --sec-color: #ffdd00;
+  --text-color: #fff;
+}
+/* end global variables */

@@ -1,0 +1,95 @@
+.team {
+    background-color: #fbf2ff;
+    padding: 5rem 0;
+    .team-title {
+        color: var(--sec-color);
+        font-size: 5rem;
+        font-weight: 700;
+        text-align: center;
+        span {
+            color: var(--main-color);
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 4rem;
+        }
+    }
+    video {
+        width: calc(100% - 30%);
+        margin: 3rem 0 3rem 3rem;
+    }
+    .team-1,
+    .team-2 {
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+        .card-1,
+        .card-2,
+        .card-3 {
+            max-width: 400px;
+            background-color: var(--text-color);
+            border-radius: 20px;
+            h1,
+            h2,
+            h3,
+            p {
+                text-align: center;
+            }
+            h1,
+            h3 {
+                color: #000;
+            }
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            h2 {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                letter-spacing: 2px;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            p {
+                color: #777;
+                margin: 2rem 0;
+            }
+            .creator-title,
+            .biz-title,
+            .artist-title,
+            .pm-title,
+            .tech-title {
+                color: var(--text-color);
+                padding: 1.5rem;
+            }
+            .creator-title {
+                background-color: #ff9d9d;
+            }
+            .biz-title {
+                background-color: #6659ff;
+            }
+            .artist-title {
+                background-color: #ffdd00;
+            }
+            .pm-title {
+                background-color: #67d186;
+            }
+            .tech-title {
+                background-color: #aa8cff;
+            }
+            .icons {
+                .icon {
+                    font-size: 1.7rem;
+                    margin: 0 20px;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:hover {
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.values h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--main-color);
+  background-color: #fff8f3;
+  padding: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .values h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .values .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.values .boxes .box-1,
+.values .boxes .box-2,
+.values .boxes .box-3 {
+  padding: 1rem;
+}
+
+.values .boxes .box-1 video,
+.values .boxes .box-2 video,
+.values .boxes .box-3 video {
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: calc(100% - 10%);
+}
+
+.values .boxes .box-1 h2,
+.values .boxes .box-1 p,
+.values .boxes .box-2 h2,
+.values .boxes .box-2 p,
+.values .boxes .box-3 h2,
+.values .boxes .box-3 p {
+  text-align: center;
+}
+
+.values .boxes .box-1 h2,
+.values .boxes .box-2 h2,
+.values .boxes .box-3 h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.values .boxes .box-1 p,
+.values .boxes .box-2 p,
+.values .boxes .box-3 p {
+  margin: 15px 0;
+}
+
+.values .boxes .box-1 {
+  background-color: #ffeced;
+}
+
+.values .boxes .box-2 {
+  background-color: #f0fff8;
+}
+
+.values .boxes .box-3 {
+  background-color: #f4f2ff;
+}
+/*# sourceMappingURL=values.css.map */

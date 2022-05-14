@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="imaginary ones" content="NFT WEBSITE" />
+    <!-- manifest file -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- website icon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>imaginary ones</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const audio = new Audio("./click.wav");
+      document.addEventListener('click',() => audio.play())
+    </script>
+  </body>
+</html>

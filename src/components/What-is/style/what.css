@@ -1,0 +1,52 @@
+.what {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--main-color);
+  background-image: url("../../../images/ball-pink.webp"), url("../../../images/ball-purple.webp");
+  background-position: -15%, 110% 150%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.what img {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+@media screen and (max-width: 1024px) {
+  .what .three {
+    display: none;
+  }
+}
+
+.what .content h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--text-color);
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 640px) {
+  .what .content h1 {
+    font-size: 3rem;
+  }
+}
+
+.what .content h1 span {
+  color: var(--sec-color);
+}
+
+.what .content p {
+  color: var(--text-color);
+  font-size: 2rem;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+@media screen and (max-width: 640px) {
+  .what .content p {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=what.css.map */

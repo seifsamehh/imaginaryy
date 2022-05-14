@@ -1,0 +1,230 @@
+@media screen and (max-width: 768px) {
+  .vibes .upper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.vibes .upper .popout {
+  width: calc(100% - 49%);
+  height: 100vh;
+  color: #1e1621;
+  background-color: #e3a8ff;
+  font-weight: 900;
+  font-size: 5rem;
+  padding: 2rem 8rem;
+}
+
+@media screen and (max-width: 330px) {
+  .vibes .upper .popout {
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 331px) and (max-width: 768px) {
+  .vibes .upper .popout {
+    padding: 1rem;
+    width: 100%;
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vibes .upper .popout {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffdd00;
+    color: #000;
+  }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffdd00;
+    color: #000;
+  }
+  70% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffdd00;
+    color: #000;
+  }
+  100% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffdd00;
+    color: #000;
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffdd00;
+    color: #000;
+  }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #ffdd00;
+    color: #000;
+  }
+  70% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffdd00;
+    color: #000;
+  }
+  100% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #ffdd00;
+    color: #000;
+  }
+}
+
+.vibes .upper .popout span {
+  position: relative;
+  display: inline-block;
+  -webkit-animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+          animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.vibes .upper .popout span:nth-last-child(1n) {
+  -webkit-animation-delay: -0.16667s;
+          animation-delay: -0.16667s;
+}
+
+.vibes .upper .popout span:nth-last-child(2n) {
+  -webkit-animation-delay: -0.33333s;
+          animation-delay: -0.33333s;
+}
+
+.vibes .upper .popout span:nth-last-child(3n) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.vibes .upper video {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff1e4;
+}
+
+@media screen and (max-width: 1024px) {
+  .vibes .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.vibes .footer .video {
+  width: 100%;
+  position: relative;
+}
+
+.vibes .footer .video video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vibes .footer .video .title {
+  font-size: 7rem;
+  font-weight: 200;
+  line-height: 2.6;
+  color: #000;
+  letter-spacing: 8px;
+  mix-blend-mode: multiply;
+}
+
+.vibes .footer .bot {
+  width: calc(100% - 50%);
+}
+
+@media screen and (max-width: 768px) {
+  .vibes .footer .bot {
+    width: 100%;
+  }
+}
+
+.vibes .footer .text {
+  background-color: var(--sec-color);
+  padding: 2rem 4rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vibes .footer .text h1 {
+  color: #000;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 2.6;
+  letter-spacing: 5px;
+  -webkit-animation: trans 6s ease-in-out infinite;
+          animation: trans 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes trans {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes trans {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=vibes.css.map */

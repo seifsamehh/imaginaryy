@@ -1,0 +1,105 @@
+#Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.home {
+    position: fixed;
+    top: 0;
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
+    z-index: 10;
+    .nav-bar {
+        padding: 2rem;
+        @media screen and (max-width: 768px) {
+            padding: 0;
+            justify-content: space-around;
+        }
+        svg {
+            @media screen and (max-width: 768px) {
+                width: 100px !important;
+            }
+        }
+        .icon {
+            width: 30px !important;
+        }
+        .menu-item {
+            color: var(--text-color);
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin: 10px 0;
+        }
+        .active {
+            background-color: var(--sec-color);
+            color: #000;
+            width: fit-content;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .link-3,
+        .link-4,
+        .link-5,
+        .link-6,
+        .link-7,
+        .link-8 {
+            color: rgba(255,255,255,0.6);
+            position: relative;
+            overflow: hidden;
+            &::before {
+                content: 'COMING SOON';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: var(--text-color);
+                width: 100%;
+                border-radius: 10px;
+                color: #000;
+                transform: translateY(100%);
+                transition: 0.5s;
+            }
+            &:hover::before {
+                transform: translateY(0);
+            }
+        }
+        .bm-item-list {
+            padding: 2rem;
+        }
+        .bm-overlay {
+            display: none;
+        }
+        .bm-menu-wrap {
+            transform: translateX(-90%);
+        }
+        .bm-burger-button {
+            width: 30px;
+            color: #000;
+        }
+        .bm-menu {
+            width: 100%;
+            background-color: var(--main-color);
+            @media screen and (max-width: 300px) {
+                width: 140%;
+                transform: translate(-3%, 2%);
+            }
+            @media (min-width: 334px) and (max-width: 640px) {
+                width: 140%;
+                transform: translate(-10%, 2%);
+            }
+        }
+    }
+    .nav-bar.active {
+        background-color: rgba(255,255,255,0.8);
+        color: var(--text-color);
+        padding: 2rem;
+        @media screen and (max-width: 768px) {
+            padding: 1rem;
+        }
+        @media (min-width: 769px) {
+            background-color: rgba(255,255,255,0.8);
+        }
+    }
+}

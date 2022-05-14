@@ -1,0 +1,36 @@
+.why {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eefff7;
+    background-image: url('../../../images/ball-light-green.webp') ,url('../../../images/ball-pink.webp');
+    background-position: -15%, 110% 150%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    img {
+        cursor: grab;
+    }
+    .content {
+        h1 {
+            color: var(--main-color);
+            font-size: 6rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            @media screen and (max-width: 640px) {
+                font-size: 3rem;
+            }
+            span {
+                color: var(--sec-color);
+            }
+        }
+        p {
+            color: #000;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            margin: 5rem 0;
+            @media screen and (max-width: 640px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

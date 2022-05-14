@@ -1,0 +1,49 @@
+.values {
+    h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        color: var(--main-color);
+        background-color: #fff8f3;
+        padding: 3rem;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    .boxes {
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        .box-1,
+        .box-2,
+        .box-3 {
+            padding: 1rem;
+            video {
+                cursor: grab;
+                width: calc(100% - 10%);
+            }
+            h2,
+            p {
+                text-align: center;
+            }
+            h2 {
+                color: #000;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            p {
+                margin: 15px 0;
+            }
+        }
+        .box-1 {
+            background-color: #ffeced;
+        }
+        .box-2 {
+            background-color: #f0fff8;
+        }
+        .box-3 {
+            background-color: #f4f2ff;
+        }
+    }
+}
